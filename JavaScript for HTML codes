@@ -1,0 +1,148 @@
+<*************** 4- Input Button code ***************** >
+
+<html>
+
+<head>
+<title> Learning JS : Input to the Button  </title>
+
+<script type = "text/javascript">
+	function diff()
+	{
+		var a = document.getElementById("name").value;
+		
+		if (a.length == 0)
+		{
+			document.getElementById("para").innerHTML = "no value";
+		}
+		else
+			document.getElementById("para").innerHTML = a; 
+	}
+
+
+
+</script>
+
+</head>
+
+<body> 
+input button
+
+<h1> Let's see how it works<h1>
+
+<input id="name" type="text"> </input>
+
+<button onclick="diff();"> Click and see entered value below </button>
+<h1 id="para"> </h1>
+<!h3 id = "para1"><!/h3>
+</body>
+
+</html>
+
+
+
+<*************** 5- Input Box code ***************** >
+
+<html>
+
+<head>
+<title> Experiment with java script  </title>
+
+<script type ="text/javascript"> 
+	function addParagraphText() 
+	 
+	{
+		document.getElementById("olala").innerHTML = "Congratulations! your button is working";
+	}
+
+
+</script>
+</head>
+
+<body> 
+<button onclick="addParagraphText();"> press here </button>
+<h1 id="olala"> </h1>
+</body>
+
+
+</html>
+
+<************** 6- Alert code **************>
+
+<html>
+
+<head>
+<title> Learning JS : Alert  </title>
+
+<script>
+	function pratham()
+	{
+		var a = document.getElementById("name").value;
+		alert("Your result would be = " + a*10 );
+		
+	//	if (a.length == 0)
+	//	{
+	//		document.getElementById("para").innerHTML = "Sorry you didn't enter any number";
+	//	}
+	//	else
+	//		document.getElementById("para").innerHTML = a;
+	}
+
+
+
+</script>
+
+</head>
+
+<body> 
+Will check alert first
+
+<h1>  entered number and click 2nd button result= multiply by 10 <h1>
+
+
+<button onclick = "alert ('Alert function is working ')";> First Button </button>
+
+<input id="name" type="number"> </input>
+
+<button onclick="pratham()"> 2nd button </button>
+
+<!h4 id="para"> 
+</body>
+
+
+</html>
+
+
+<************** 7- Blur Example code **************>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Java Script Experiment</title>
+	<script type="text/javascript">
+		function check() 
+
+		{
+			var x= document.getElementById("key").value;
+			if (x.length < 1) 
+				{
+					document.getElementById("msg").innerHTML= "Please enter something";
+				}
+				else
+				{
+					document.getElementById("msg").innerHTML= "Congrats! blur is working";
+				}
+				
+		}	 		 		
+
+	</script>
+
+</head>
+
+
+<body>
+	 
+	<input id="key" type="text" onblur="check();">
+ 
+	<h1 id="msg"></h1>
+</body>
+</html>
